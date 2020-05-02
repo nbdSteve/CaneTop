@@ -31,3 +31,5 @@ j
 :src/main/java/gg/steve/bgbuddyboy/canetop/cmd/CaneCmd.java,7\d\7d6f90fdd97938af2112d9791f1abe997f692a81
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+w
+Gsrc/main/java/gg/steve/bgbuddyboy/canetop/papi/CanePlayerExpansion.java,b\5\b5dda5405539ac65ab5d79e29ac2b52e7fa33ae1

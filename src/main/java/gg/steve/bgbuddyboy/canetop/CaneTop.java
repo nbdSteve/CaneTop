@@ -3,6 +3,8 @@ package gg.steve.bgbuddyboy.canetop;
 import gg.steve.bgbuddyboy.canetop.core.CanePlayerManager;
 import gg.steve.bgbuddyboy.canetop.managers.FileManager;
 import gg.steve.bgbuddyboy.canetop.managers.SetupManager;
+import gg.steve.bgbuddyboy.canetop.papi.CanePlayerExpansion;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.text.DecimalFormat;
@@ -19,6 +21,9 @@ public final class CaneTop extends JavaPlugin {
         SetupManager.registerCommands(instance);
         SetupManager.registerEvents(instance);
         CanePlayerManager.init();
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            new CanePlayerExpansion(instance).register();
+        }
     }
 
     @Override

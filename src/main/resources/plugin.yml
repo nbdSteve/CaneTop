@@ -4,3 +4,5 @@ main: gg.steve.bgbuddyboy.canetop.CaneTop
 api-version: 1.13
 authors: [stevegoodhill]
 description: Plugin that tracks the total number of sugarcane minded by a player. Developed for bgbuddyboy.
+depend:
+  - PlaceholderAPI
