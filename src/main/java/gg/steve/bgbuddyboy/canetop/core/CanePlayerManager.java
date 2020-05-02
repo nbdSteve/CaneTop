@@ -38,6 +38,7 @@ public class CanePlayerManager implements Listener {
     public static CanePlayer getCanePlayer(UUID playerId) {
         if (canePlayers.containsKey(playerId)) return canePlayers.get(playerId);
         canePlayers.put(playerId, new CanePlayer(playerId));
+        playersInCaneMinedOrder.add(canePlayers.get(playerId));
         return canePlayers.get(playerId);
     }
 

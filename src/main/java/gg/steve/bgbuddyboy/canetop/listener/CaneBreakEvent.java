@@ -2,7 +2,6 @@ package gg.steve.bgbuddyboy.canetop.listener;
 
 import gg.steve.bgbuddyboy.canetop.core.CanePlayer;
 import gg.steve.bgbuddyboy.canetop.core.CanePlayerManager;
-import gg.steve.bgbuddyboy.canetop.utils.LogUtil;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
@@ -19,7 +18,6 @@ public class CaneBreakEvent implements Listener {
         this.caneMined = 1;
         CanePlayer player = CanePlayerManager.getCanePlayer(event.getPlayer().getUniqueId());
         isSugarCaneAbove(event.getBlock());
-        LogUtil.info("increased mined cane by " + this.caneMined);
         player.incrementCaneMined(this.caneMined);
     }
 
