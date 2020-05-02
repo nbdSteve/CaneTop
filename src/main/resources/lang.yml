@@ -1,0 +1,19 @@
+help:
+  - '&5&lCane &f• &6Commands:'
+  - ' &f - &e/c r &7&o((reloads the configuration)).'
+  - ' &f - &e/c t [page] &7&o((displays the top cane miners on the server)).'
+
+reload:
+  - '&5&lCane &f• &7Successfully reloaded all configuration for the plugin.'
+
+permission-debug:
+  - '&5&lCane &f• &7You do not have permission (&6{node}&7) to use that.'
+
+cane-top:
+  header:
+    - '&7&m------------------------------------------'
+    - '&5&lTop Cane Miners &7#{page}'
+  entry:
+    - '&d#{rank} &b{player}&7: &6{cane-mined} Cane Mined.'
+  footer:
+    - '&7&m------------------------------------------'

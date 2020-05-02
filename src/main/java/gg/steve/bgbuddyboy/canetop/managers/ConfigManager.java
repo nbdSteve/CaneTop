@@ -6,9 +6,12 @@ import java.io.File;
 
 public enum ConfigManager {
     CONFIG("cane-top.yml"),
+    MESSAGES("lang.yml"),
+    PERMISSIONS("permissions.yml"),
     DATA("data" + File.separator + "cane-data.yml");
 
     private final String path;
+    public static int entriesPerPage;
 
     ConfigManager(String path) {
         this.path = path;

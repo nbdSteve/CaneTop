@@ -1,0 +1,4 @@
+command:
+  top: cane-top.top
+  help: cane-top.help
+  reload: cane-top.reload

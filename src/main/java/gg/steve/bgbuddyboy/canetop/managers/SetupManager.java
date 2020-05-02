@@ -1,5 +1,7 @@
 package gg.steve.bgbuddyboy.canetop.managers;
 
+import co.aikar.commands.PaperCommandManager;
+import gg.steve.bgbuddyboy.canetop.cmd.CaneCmd;
 import gg.steve.bgbuddyboy.canetop.core.CanePlayerManager;
 import gg.steve.bgbuddyboy.canetop.listener.CaneBreakEvent;
 import org.bukkit.plugin.Plugin;
@@ -24,10 +26,12 @@ public class SetupManager {
         for (ConfigManager file : ConfigManager.values()) {
             file.load(fileManager);
         }
+        ConfigManager.entriesPerPage = ConfigManager.CONFIG.get().getInt("entries-per-page");
     }
 
     public static void registerCommands(Plugin instance) {
-//        instance.getCommand("pack").setExecutor(new PackCmd());
+        PaperCommandManager manager = new PaperCommandManager(instance);
+        manager.registerCommand(new CaneCmd());
     }
 
     /**
